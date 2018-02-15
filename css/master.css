@@ -1,7 +1,38 @@
 section{
-  width: 100%
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  width: 380px;
+  border: 1px solid;
+  display: flex;;
+  flex-direction: column;
+  padding: 1%;
+  border-radius: 5%;
 }
 
 label, input{
   display: block;
+  width: 90%;
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px
+}
+
+.two-columns{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-columns > *{
+  flex-basis: 47%;
 }

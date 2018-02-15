@@ -7,7 +7,21 @@
   </head>
   <body>
     <section>
-      <form action="#" method="post">
+      <input type="search" name="search" id="search">
+    </section>
+    <section>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <h1>Login</h1>
+        <div class="two-columns">
+          <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre">
+          </div>
+          <div class="input-group">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellido" id="apellido" placeholder="apellido">
+          </div>
+                  </div>
         <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="teclea username">
 
@@ -16,6 +30,36 @@
 
         <label for="password">password</label>
         <input type="password" name="password" id="password" placeholder="password">
+        <fieldset>
+          <legend>Sexo</legend>
+          <input type="radio" name="sexo" id="fem" value="f">
+          <label for="fem">Femina</label>
+          <input type="radio" name="sexo" id="masc" value="m">
+          <label for="masc">Masculo</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencias</legend>
+          <input type="checkbox" name="sexo" id="p1" value="p1">
+          <label for="fem">Preferencia 1</label>
+          <input type="checkbox" name="sexo" id="p2" value="p2">
+          <label for="masc">Preferencia 1</label>
+        </fieldset>
+
+        <label for="cumpleaños">Selecciona tu cumpleaños</label>
+        <input type="date" name="cumpleaños" id="cumpleaños">
+
+        <label for="service"></label>
+        <input type="range" name="service" id="service" value="service" min="0" max="100">
+
+        <input type="number" name="age" id="age" min="5" placeholder="edad">
+
+        <input type="url" name="facebook" id="ur "value="" placeholder="url facebook">
+
+        <label for="tel">Telefono</label>
+        <input type="tel" name="telefono" value="" placeholder="telefono">
+
+        <input type="file" name="avatar" value="" accept="img/avatar" multiple="true">
 
         <button type="submit" name="button">Login</button>
 
